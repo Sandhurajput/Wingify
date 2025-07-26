@@ -33,32 +33,46 @@ h1, h2, h3, h4 {
   flex-wrap: wrap;
   z-index: 1;
 }
-
 .top-half::before {
-  content: '';
-  position: absolute;
-  width: 300%;
-  height: 150vh;
-  top: -60vh;
-  left: -100%;
-  background-color: #3D00A0;
-  border-radius: 50%;
-  z-index: -1;
+content: '';
+position: absolute;
+width: 180vw;
+height: 80vw;
+top: -40vw;
+left: -40vw;
+background-color: #3D00A0;
+border-radius: 0 0 100% 100% / 0 0 100% 100%;
+z-index: -1;
 }
 
-.top-half::after {
-  content: '';
-  position: absolute;
-  bottom: -1px;
-  left: 0;
-  width: 100%;
-  height: 280px; /* Adjusted height for a more balanced curve on large screens */
-  background: white;
-  border-top-left-radius: 50% 280px; /* Adjusted vertical radius to match new height */
-  border-top-right-radius: 50% 280px; /* Adjusted vertical radius to match new height */
-  transform: translateY(50%);
-  z-index: 1;
+@media (max-width: 1024px) {
+  .top-half::before {
+    width: 250vw;
+    height: 120vw;
+    top: -60vw;
+    left: -60vw;
+  }
 }
+
+@media (max-width: 768px) {
+  .top-half::before {
+    width: 300vw;
+    height: 140vw;
+    top: -70vw;
+    left: -80vw;
+  }
+}
+
+@media (max-width: 480px) {
+  .top-half::before {
+    width: 350vw;
+    height: 90vh;
+    top: 0;
+    left: -100vw;
+  }
+}
+
+
 
 .left-text {
   flex: 1;
@@ -545,7 +559,15 @@ h1, h2, h3, h4 {
     padding: 1rem;
     max-width: 380px;
     width: calc(100% - 2rem);
-    margin: 1rem auto;
+    margin: -1.2rem auto 0 auto;
+    z-index: 10;
+    position: relative;
+    /* Only 10% of form overlaps with blue arc, rest stays outside */
+  }
+
+  .left-text {
+    z-index: 10;
+    position: relative;
   }
 
   .right-form h3 {
