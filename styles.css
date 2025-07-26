@@ -32,6 +32,9 @@ h1, h2, h3, h4 {
   gap: 3rem;
   flex-wrap: wrap;
   z-index: 1;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .top-half::before {
@@ -260,6 +263,9 @@ h1, h2, h3, h4 {
   padding: 5rem 2rem 3rem;
   margin-top: 0;
   text-align: center;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .bottom-half h3 {
