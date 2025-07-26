@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wingify Assigenment</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <section class="top-half">
+    <div class="top-content"></div>
+    <div class="left-text">
+    
+     <h2>Lorem ipsum dolor sit amet, consectetur</h2>
+      <ul>
+        <li>
+         
+          <b>Lorem ipsum dolor sit amet<br></b>
+          You can use an Emoji for the circular bullet icon.
+        </li>
+        <li>
+          
+          <b>Lorem ipsum dolor sit amet<br></b>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit dolor.
+        </li>
+        <li>
+        
+          <b>Lorem ipsum dolor sit amet<br></b>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit dolor.
+        </li>
+        <li>
+        
+          <b>Lorem ipsum dolor sit amet<br></b>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit dolor.
+        </li>
+      </ul>
+    </div>
+    <div class="right-form">
+      <h3>Lorem ipsum dolor</h3>
+      <form id="demoForm" novalidate>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" placeholder="Enter your email" required>
+          <span class="error-message" id="email-error"></span>
+        </div>
+        <div class="form-group">
+          <label>Preferred Demo Date</label>
+          <div class="date-selects">
+            <select id="date-day" required>
+              <option value="">Date</option>
+              <option>01</option>
+              <option>02</option>
+            </select>
+            <select id="date-month" required>
+              <option value="">Month</option>
+              <option>Jan</option>
+              <option>Feb</option>           
+            </select>
+            <select id="date-year" required>
+              <option value="">Year</option>
+              <option>2025</option>
+              <option>2024</option>             
+            </select>
+          </div>
+          <span class="error-message" id="date-error"></span>
+        </div>
+        <div class="form-group">
+          <label for="department">Your Department</label>
+          <select id="department" required>
+            <option value="">Choose from the list</option>
+            <option>Marketing</option>
+            <option>Human Resources</option>
+          </select>
+          <span class="error-message" id="department-error"></span>
+        </div>
+        <div class="form-group">
+          <label for="product-demo">Which product would you like a demo for?</label>
+          <textarea id="product-demo" rows="3" placeholder="Tell us more about your requirements..." required></textarea>
+          <span class="error-message" id="product-demo-error"></span>
+        </div>
+        <div class="form-group">
+          <label>How did you hear about us?</label>
+          <div class="checkboxes">
+            <label><input type="radio" name="source" value="social_media"> Social Media</label>
+            <label><input type="radio" name="source" value="google_ads"> Google Ads</label>
+          </div>
+          <span class="error-message" id="source-error"></span>
+        </div>
+        <button type="submit" class="submit-btn">Request a Demo</button>
+      </form>
+    </div>
+  </div>
+</section>
+<section class="bottom-half">
+  <h3>Lorem ipsum dolor sit amet</h3>
+  <div class="card-section">
+    <div class="card">
+      <img src="cartoon-illustration-of-employees-people-there-read-interested-in-the-magazine-for-auto-industry-R239D4.jpg" alt="Default state image" onerror="this.onerror=null;this.src='https://placehold.co/450x200/cccccc/000000?text=Image+Error';"/>
+      <div class="card-content">
+        <strong>Default state</strong>
+        <p>This is default state of the card, use an image as `img` tag and add gradient overlay and text over it.</p>
+      </div>
+       </div>
+    <div class="card">
+      <img src="cartoon-illustration-of-employees-people-there-read-interested-in-the-magazine-for-auto-industry-R239D4.jpg" alt="Hover state image" onerror="this.onerror=null;this.src='https://placehold.co/450x200/cccccc/000000?text=Image+Error';"/>
+      <div class="card-content">
+        <strong>Another Card</strong>
+          </div> 
+      <div class="card-overlay">
+        <strong>Hover State</strong>
+        <p>This is the hover state of the second card; both cards should appear like this when the user hovers over them.</p>
+      </div>
+    </div>
+  </div>
+</section>
+<script src="script.js"></script>
+</body>
+</html>
